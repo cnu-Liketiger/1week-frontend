@@ -3,7 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>[202202506] 한채연 | About me</title>
+
+    <style>
+      #top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: lightgray;
+        
+      }
+
+      #top_left {
+        position: absolute;
+        left: 5%;
+        top: 25%;
+      }
+
+      #top_right {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        left: 70%;
+        right: 5%;
+        top: 25%;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #bottom_left {
+        position: absolute;
+        right: 50%;
+        top: 30%;
+        margin-right: 30px;
+      }
+
+      #bottom_right {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        margin-left: 30px;
+      }
+
+      .self-introduction {
+        line-height: 210%;
+      }
+
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1 id = "super-div">
+      <h2 id = "top">
+        <div id = "top_left">About me Page</div>
+        <div id = "top_right">
+          <a href = "index.html">
+            <div id = "About_me">About me</div>
+          </a>
+          <a href = "src/pages/page.html">
+            <div id = "Hobby">Hobby</div>
+          </a>
+          <a href = "src/pages/page2.html">
+            <div id = "Goals">Goals</div>
+          </a>
+        </div>
+      </h2>
+      <h3 id = "bottom">
+        <div id = "bottom_left">
+          <img src = "selfie.jpeg" width="300px" height="300px">
+        </div>
+        <div id = "bottom_right">
+          <div class = "self-introduction">이름: 한채연</div>
+          <div class = "self-introduction">mbti: ESTJ</div>
+          <div class = "self-introduction">학력: 충남대학교 인공지능학과 재학 중</div>
+          <div class = "self-introduction">연락처: 010-9953-5213</div>
+          <div class = "self-introduction">이메일: gkscodus5213@naver.com</div>
+          <div class = "self-introduction">sns: _queencxs</div>
+          <a href = "https://www.instagram.com/_queencxs/">
+            <div class = "self-introduction">
+                <img src = "instagram.jpeg" width="100px" height="100px">
+            </div>
+        </a>
+        </div>
+      </h3>
+    </h1>
+  </body>
 </html>

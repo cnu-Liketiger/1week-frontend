@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[202202506] 한채연 | Hobby</title>
+    <title>[202202506] 한채연 | Goals</title>
 
     <style>
       #top {
@@ -37,25 +37,45 @@
 
       #bottom {
         position: absolute;
-        top: 30%;
-        left: 25%;
-        width: 500px;
-        height: 300px;
-        border: 1px solid black;
+        top: 20%;
+        left: 15%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .goal_box {
+        width: 50px;
+        margin: 100px;
+      }
+
+      .box_top {
+        background-color: gray;
+        width: 150px;
+        height: 25px;
+        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
 
+      .box_bottom {
+        background-color: lightgray;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
-    <h1 id = "super-div">
+    <h1>super-div
       <h2 id = "top">
-        <div id = "top_left">Hobby Page</div>
+        <div id = "top_left">Goals Page</div>
         <div id = "top_right">
-          <a href = "web/1week-frontend/index.html">
+          <a href = "index.html">
             <div id = "About_me">About me</div>
           </a>
           <a href = "page.html">
@@ -67,10 +87,18 @@
         </div>
       </h2>
       <h3 id = "bottom">
-        <div class = "bottom_hobby">1. 피아노 연습</div>
-        <div class = "bottom_hobby">2. 뜨개질</div>
-        <div class = "bottom_hobby">3. 색칠</div>
-        <div class = "bottom_hobby">4. 춤 연습</div>
+        <div class = "goal_box">
+          <div class = "box_top">Goal 1</div>
+          <div class = "box_bottom">web 마스터하기</div>
+        </div>
+        <div class = "goal_box">
+          <div class = "box_top">Goal 2</div>
+          <div class = "box_bottom">대회 나가기</div>
+        </div>
+        <div class = "goal_box">
+          <div class = "box_top">Goal 3</div>
+          <div class = "box_bottom">취업하기</div>
+        </div>
       </h3>
     </h1>
   </body>
