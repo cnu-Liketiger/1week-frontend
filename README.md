@@ -26,3 +26,8 @@
 - 미션은 **frontend-introduce-html** 저장소를 fork하고 clone하여 시작한다.
 - 미션 완료 이후 `docs/README.md`에 미션을 통해 배운 내용들을 작성한다.
 - 과제 진행 및 제출 방법은 **[미션 진행 가이드](https://www.notion.so/f0571981555d4509839b9db8d5382162?pvs=21)** 문서를 참고한다
+
+
+hobby/goals -> about me
+position 다시 설명
+시멘틱 태그
