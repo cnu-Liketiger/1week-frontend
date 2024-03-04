@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[202112345] 아무개 | Hobby</title>
+    <title>[202112345] 김예은 | Hobby</title>
     <style>
         #top_container{
         display: flex;
@@ -34,6 +34,7 @@
       }
       #text_container{
         margin-top: 13%;
+        list-style: none; /*ui 요소의 자식인 li 요소들의 리스트 스타일을 제거함 (점 제거)*/
       }
       .hobby_texts{
         text-align: center;
@@ -44,25 +45,28 @@
         text-decoration: none; 
         color: inherit; 
         }
+      #top_container li {
+        list-style-type: none;
+      }
     </style>
 </head>
 <body>
     <main>
-        <header id="top_container">
-          <h2 id="page_name">Hobby</h2>
-          <h2 id="category1">About me</h2>
-          <h2 id="category2">Hobby</h2>
-          <h2 id="cayegory3">Goals</h2>
-        </header>
+        <nav id="top_container"> <!-- header가 아닌 nav로 수정 -->
+          <li id="page_name">Hobby</li>
+          <li id="category1">About me</li>
+          <li id="category2">Hobby</li>
+          <li id="cayegory3">Goals</li>
+        </nav>
         <section>
           <div id="bottom_container">
-            <div id="text_container">
-                <div class="hobby_texts">스릴러 영화보기</div>
-                <div class="hobby_texts">산책하기</div>
-                <div class="hobby_texts">야구장 가서 응원하기</div>
-                <div class="hobby_texts">책읽기</div>
-                <div class="hobby_texts">헬스장 가서 런닝머신 뛰기</div>
-            </div>
+            <ul id="text_container">
+              <li class="hobby_texts">스릴러 영화보기</li>
+              <li class="hobby_texts">산책하기</li>
+              <li class="hobby_texts">야구장 가서 응원하기</li>
+              <li class="hobby_texts">책읽기</li>
+              <li class="hobby_texts">헬스장 가서 런닝머신 뛰기</li>
+          </ul>
           </div>
         </section>
       </main>

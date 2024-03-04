@@ -1,77 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[202112345] 아무개 | Goals</title>
-    <style>
-        #top_container{
-        display: flex;
-        height: 100px;
-        background-color: lightgray;
-        align-items: center;
-      }
-      #page_name{
-        margin-left: 2%;
-      }
-      #category1{
-        margin-left: 55%;
-      }
-      #category2{
-        margin-left: 5%;
-      }
-      #cayegory3{
-        margin-left: 5%;
-      }
-      #bottom_container{
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .goals_main{
-        margin-top: 5%;
-        width: 250px;
-        height: 300px;
-        background-color: lightgray;
-      }
-      .goals_top{
-        width: 250px;
-        height: 40px;
-        background-color: rgba(0, 0, 0, 0.684);
-        color: white;
-        font-size: 30px;
-        text-align: center;
-      }
-      .goals_text{
-        font-size: 20px;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 100px;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[202112345] 김예은 | Goals</title>
+  <style>
+    #top_container {
+      display: flex;
+      height: 100px;
+      background-color: lightgray;
+      align-items: center;
+    }
+
+    #page_name {
+      margin-left: 2%;
+    }
+
+    #category1 {
+      margin-left: 55%;
+    }
+
+    #category2 {
+      margin-left: 5%;
+    }
+
+    #cayegory3 {
+      margin-left: 5%;
+    }
+
+    #bottom_container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .goals_main {
+      margin-top: 5%;
+      width: 250px;
+      height: 300px;
+      background-color: lightgray;
+    }
+
+    .goals_top {
+      width: 250px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.684);
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .goals_text {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #top_container li { /*앞에 까만 점 사라지게 만드는 설정*/
+        list-style-type: none;
+    }
+  </style>
 </head>
+
 <body>
-    <main>
-        <header id="top_container">
-          <h2 id="page_name">Goals</h2>
-          <h2 id="category1">About me</h2>
-          <h2 id="category2">Hobby</h2>
-          <h2 id="cayegory3">Goals</h2>
-        </header>
-        <section>
-            <div id="bottom_container">
-                <div class="goals_main">
-                    <div class="goals_top">Goal 1</div>
-                    <div class="goals_text">토익 800점 달성</div>
-                </div>
-                <div class="goals_main">
-                    <div class="goals_top">Goal 2</div>
-                    <div class="goals_text">웹 마스터</div>
-                </div>
-                <div class="goals_main">
-                    <div class="goals_top">Goal 3</div>
-                    <div class="goals_text">책 읽기</div>
-                </div>
+  <main>
+    <nav id="top_container"> <!-- header가 아닌 nav로 수정 -->
+      <li id="page_name">Hobby</li> <!-- h1 태그를 li 태그로 수정 -->
+      <li id="category1">About me</li>
+      <li id="category2">Hobby</li>
+      <li id="cayegory3">Goals</li>
+    </nav>
+      <div id="bottom_container">
+        <section> <!-- section으로 나누어줌, 총 3덩어리 -->
+          <div class="goals_main">
+            <div class="goals_top">Goal 1</div>
+            <div class="goals_text">토익 800점 달성</div>
+          </div>
         </section>
-      </main>
+        <section>
+          <div class="goals_main">
+            <div class="goals_top">Goal 2</div>
+            <div class="goals_text">웹 마스터</div>
+          </div>
+        </section>
+        <section>
+          <div class="goals_main">
+            <div class="goals_top">Goal 3</div>
+            <div class="goals_text">책 읽기</div>
+          </div>
+        </section>
+  </main>
 </body>
+
 </html>

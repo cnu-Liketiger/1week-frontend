@@ -1,100 +1,118 @@
 <!doctype html>
+<html lang="en">
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[202112345] 김예은 | About me</title>
-    <style>
-      #top_container{
-        display: flex;
-        height: 100px;
-        background-color: lightgray;
-        align-items: center;
-      }
-      #page_name{
-        margin-left: 2%;
-      }
-      #category1{
-        margin-left: 55%;
-      }
-      #category2{
-        margin-left: 5%;
-      }
-      #cayegory3{
-        margin-left: 5%;
-      }
-      #left_container{
-        height: 400px;
-        width: 500px;
-        margin-top: 5%;
-        margin-left: 14%;
-        align-items: center;
-        display: flex;
-      }
-      #photo{
-        height: 400px;
-        width: 500px;
-      }
-      #bottom_container{
-        display: flex;
-      }
-      #right_container{
-        height: 400px;
-        width: 500px;
-        margin-top: 5%;
-        margin-left: 4%;
-        align-items: center;
-      }
-      .texts{
-        font-size: 20px;
-        font-weight: 500;
-      }
-      #right_container_texts{
-        margin-top: 150px;
-      }
-      a{
-        text-decoration: none; 
-        color: inherit; 
-        margin-left: 5%;
-        }
-    </style>
-  </head>
-  <body>
-    <main>
-      <header id="top_container">
-        <h2 id="page_name">About me</h2>
-        <h2 id="category1">About me</h2>
-        <a href="/1week-frontend/src/pages/index2.html">
-          <h2 id="category2">Hobby</h2>
-        </a>    
-        <a href="/1week-frontend/src/pages/index3.html">
-          <h2 id="cayegory3">Goals</h2>
-        </a>    
-      </header>
-      <section>
-        <div id="bottom_container">
-          <div id="left_container">
-            <a href="https://www.instagram.com/yee__llo/">
-              <img id="photo" src="/1week-frontend/about_me_photo.jpg" alt="abot_me 사진">
-            </a>
-          </div>
-          <div id="right_container">
-            <div id="right_container_texts">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[202112345] 김예은 | About me</title>
+  <style>
+    #top_container {
+      display: flex;
+      height: 100px;
+      background-color: lightgray;
+      align-items: center;
+    }
+
+    #page_name {
+      margin-left: 2%;
+    }
+
+    #category1 {
+      margin-left: 55%;
+    }
+
+    #category2 {
+      margin-left: 5%;
+    }
+
+    #cayegory3 {
+      margin-left: 5%;
+    }
+
+    #left_container {
+      height: 400px;
+      width: 500px;
+      margin-top: 5%;
+      margin-left: 14%;
+      align-items: center;
+      display: flex;
+    }
+
+    #photo {
+      height: 400px;
+      width: 500px;
+    }
+
+    #bottom_container {
+      display: flex;
+    }
+
+    #right_container {
+      height: 400px;
+      width: 500px;
+      margin-top: 5%;
+      margin-left: 4%;
+      align-items: center;
+    }
+
+    .texts {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    #right_container_texts {
+      margin-top: 150px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      margin-left: 5%;
+    }
+    #top_container li {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <nav id="top_container"> <!-- header가 아닌 nav로 수정 -->
+      <li id="page_name">About me</li>
+      <li id="category1">About me</li>
+      <a href="/1week-frontend/src/pages/index2.html">
+        <li id="category2">Hobby</li>
+      </a>
+      <a href="/1week-frontend/src/pages/index3.html">
+        <li id="cayegory3">Goals</li>
+      </a>
+    </nav>
+    <section>
+      <div id="bottom_container">
+        <div id="left_container">
+          <a href="https://www.instagram.com/yee__llo/">
+            <img id="photo" src="/1week-frontend/about_me_photo.jpg" alt="abot_me 사진">
+          </a>
+        </div>
+        <div id="right_container">
+          <div id="right_container_texts">
+            <div class="texts">
+              <div class="icons_text">김예은</div>
+            </div>
+            <div class="texts">
+              <div class="icons_text">ESFP</div>
               <div class="texts">
-                  <div class="icons_text">김예은</div>
-              </div>
-              <div class="texts">
-                <div class="icons_text">ESFP</div>
+                <div class="icons_text">충남대학교 인공지능학과 3학년 재학</div>
                 <div class="texts">
-                  <div class="icons_text">충남대학교 인공지능학과 3학년 재학</div>
-                  <div class="texts">
-                    <div class="icons_text">010-7611-1865</div>
+                  <div class="icons_text">010-7611-1865</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
